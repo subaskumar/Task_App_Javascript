@@ -1,0 +1,157 @@
+body{
+    min-height: 100vh;
+  width: 100%;
+  font-family: 'PT Sans', sans-serif;
+  color: hsl(227, 15%, 36%);
+  /* 
+  include a circle smaller than the entirety of the screen with a radial gradient
+  below the circle, include a simple division with a linear gradient
+  
+  include transparency as to 
+  1) reduce the intensity of the chosen colors
+  1) lessen the weight of the hard stop in the lnear gradient
+  */
+  background: 
+    radial-gradient(
+      circle at bottom right,
+      hsla(285, 31%, 61%, 0.6), 
+      hsla(285, 31%, 61%, 0.6) 30%,
+      transparent 30%
+      ), 
+    linear-gradient(
+      to top right, 
+      hsla(347, 20%, 91%, 0.8), 
+      hsla(279, 21%, 79%, 0.8) 50%, 
+      hsla(245, 33%, 53%, 0.8) 50%, 
+      hsla(245, 36%, 55%, 0.8)
+      );
+}
+
+
+.nav{
+    background-color: #000!important;
+}
+.left_nav{
+    width: 40%;
+    height: 100%;
+    display: inline;
+
+}
+.right_nav{
+    width: 60%;
+    height: 100%;
+    float: left;
+    text-align: right;
+    padding-right: 50px;
+}
+.right_nav li{
+    display: inline-block;
+}
+.nav li a{
+    color: rgb(15, 146, 3);
+}
+.inner_add{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mybtn{
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+}
+.form_head{
+    color: violet;
+    margin: 25px 0px;
+    text-decoration: underline;
+}
+.InputArea {
+    width: 80vw;
+    max-width: 400px;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0 0;
+    background: #fff;
+    box-shadow: 0 1px 10px hsl(227deg 15% 36% / 40%);
+    border-radius: 12px;
+    animation: slideIn 0.7s 0.3s cubic-bezier(.22,-0.3,.68,1.44) both;
+    display: flex;
+    align-items: center;
+}
+.InputArea input {
+    flex-grow: 1;
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    color: inherit;
+    background: none;
+    font-family: inherit;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.InputArea button {
+    background: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    color: inherit;
+    transition: transform 0.2s ease-out;
+}
+.InputArea button svg {
+    fill: black;
+    width: 100%;
+    height: 100%;
+}
+.myCard{
+    width: 70%;
+    height: 100%;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom, hsl(237, 49%, 35%), hsl(258, 34%, 45%));
+    background-repeat: no-repeat;
+}
+h5{
+    display: inline;
+    color: rgb(207, 194, 9);
+}
+.innerTitle{
+    width: 100%;
+    margin: 10px 2px;
+}
+.innerTitle span{
+    color: white;
+}
+.statusbtn{
+    width: 5px; 
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+}
+.innerTitle_left{
+    width: 50%;
+    float: left;
+    display: inline;
+}
+.innerTitle_right{
+    width: 20%;
+    display: inline;
+    margin-left: 25px;
+}
+.innerTitle_right button{
+    margin-left: 7px;
+}
+.deleteDiv{
+    width: 20%;
+    display: inline;
+   
+}
+.dltbtn{
+    margin-left: 30px;
+    border: none;
+    background-color: transparent;
+}
+.dltbtn i{
+    color: rgb(139, 7, 7);
+}
